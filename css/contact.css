@@ -1,0 +1,112 @@
+/* contact form start */
+form {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.contact-title {
+  background: -webkit-linear-gradient(right bottom, #fff, #fff, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -10px;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+}
+
+#msg {
+  margin-top: 5%;
+  width: 50vw;
+}
+
+input {
+  margin: 0 20px;
+  padding: 2vh 20px;
+  width: 14.5vw;
+  border: none;
+  border-bottom: 2px solid #000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input::placeholder {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.radios {
+  padding-top: 5.5%;
+  text-align: center;
+}
+
+.radios p {
+  display: inline;
+  font-weight: 700;
+}
+
+.radios label {
+  padding-left: 3%;
+}
+input[type="radio"] {
+  width: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.submitBtn {
+  padding: 6% 0;
+  text-align: center;
+}
+.submitBtn button {
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-size: 16px;
+  padding: 20px 37px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.submitBtn button:disabled {
+  cursor: inherit;
+  background-color: #dad8d8;
+}
+
+@media (max-width: 600px) {
+  #msg {
+    width: 65vw;
+  }
+
+  input {
+    margin: 2.5vh 20px;
+    padding: 10px 20px;
+    width: 65vw;
+  }
+  .contact-title {
+    background: -webkit-linear-gradient(right bottom, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 12vh;
+    font-size: 12vw;
+  }
+
+  .radios {
+    padding-top: 5.5%;
+    text-align: center;
+  }
+
+  .radios p {
+    display: block;
+  }
+
+  .submitBtn {
+    padding: 7vh 0;
+    text-align: center;
+  }
+}

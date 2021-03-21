@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles -->
+  <link href="../css/nav.css" rel="stylesheet" />
+  <link href="../css/contact.css" rel="stylesheet" />
+  <link href="../css/footer.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+
+  <title>Contact - ITC Precourse</title>
+  <link rel="icon" href="../itc.png">
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./About.html">About</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+      <li><a href="https://stackoverflow.com/users/12776623/yehuda-zvi"><i class="fab fa-stack-overflow icon"></i></a>
+      </li>
+      <li><a href="https://github.com/Yehuda-Zvi"><i class="fab fa-github icon"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/jud-zvi-bb4747209/">
+          <i class="fab fa-linkedin icon"></i></a></li>
+    </ul>
+  </nav>
+
+  <h1 class="contact-title">CONTACT</h1>
+
+  <form onsubmit="event.preventDefault();">
+    <input type=" text" placeholder="First Name" id='fname' onkeyup="onFName()" required>
+    <input type="text" placeholder="Last Name" id='lname'>
+    <input type="email" placeholder="Email" id='email' onkeyup="onEmail()" required>
+    <br />
+    <input type="text" placeholder="Comment" id='msg' onkeyup="onMsg()" required>
+    <br />
+    <div class="radios">
+      <p> Best JavaScript Technology In Your Opinion?</p>
+      <label>
+        <input type="radio" name="jsTech" value="React" required>
+        React
+      </label>
+      <label>
+        <input type="radio" name="jsTech" value="Angular">
+        Angular
+      </label>
+      <label>
+        <input type="radio" name="jsTech" value="Vue">
+        Vue
+      </label>
+    </div>
+    <div class="submitBtn">
+      <button type="submit" onclick="onSub()" disabled='true' id='submitBtn'>SUBMIT</button>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p id='lan'>This page was built using: </p>
+    </div>
+    <!-- navbar -->
+    <nav>
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+
+        <!-- Social Links -->
+        <li><a href="https://stackoverflow.com/users/12776623/yehuda-zvi"><i class="fab fa-stack-overflow icon"></i></a>
+        </li>
+        <li><a href="https://github.com/Yehuda-Zvi"><i class="fab fa-github icon"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jud-zvi-bb4747209/">
+            <i class="fab fa-linkedin icon"></i></a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <p>© Israel Tech Challenge</p>
+    </div>
+  </footer>
+
+
+  <script src='../js/form.js'></script>
+  <script src='../js/footer.js'></script>
+
+</body>
+
+</html>

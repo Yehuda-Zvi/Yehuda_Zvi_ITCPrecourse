@@ -1,0 +1,78 @@
+.contact-title {
+  background: -webkit-linear-gradient(right bottom, #fff, #fff, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -10px;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.subTitle {
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-family: "Orbitron", sans-serif;
+}
+.pad0 {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.padRight {
+  padding-left: 2%;
+}
+
+.hrLine1 {
+  padding: 3% 20% 1%;
+}
+.hrLine2 {
+  padding: 4% 20% 0%;
+}
+
+.sectionWrapper {
+  line-height: 25px;
+  padding: 50px 20% 0 20%;
+}
+
+.sectionWrapper li {
+  padding: 10px;
+}
+
+.sectionWrapper h3 {
+  font-weight: 400;
+}
+
+.map {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.btns {
+  padding: 1% 0 2%;
+}
+.btns button {
+  width: 100px;
+  height: 50px;
+}
+
+#back {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    padding-top: 12vh;
+    font-size: 12vw;
+    background: -webkit-linear-gradient(right bottom, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sectionWrapper {
+    padding: 2vh 4vw 0 4vw;
+  }
+  .map p {
+    padding: 1vh 3vw;
+  }
+}
